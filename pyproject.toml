@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leetcode-tdd"
+version = "0.1.0"
+description = "LeetCode problems with TDD"
+requires-python = ">=3.7"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+pythonpath = ["src"]
