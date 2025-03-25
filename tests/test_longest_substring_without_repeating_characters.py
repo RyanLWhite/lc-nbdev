@@ -1,9 +1,6 @@
 import pytest
-from leetcode_solutions.longest_substring_without_repeating_characters import Solution
+from leetcode_solutions.problem_003_length_of_longest_substring import length_of_longest_substring as f
 
-@pytest.fixture
-def solver():
-    return Solution()
 
-def test_empty_string(solver):
-    assert solver.lengthOfLongestSubstring("") == 0
+def test_empty_string():
+    assert f("") == 0
