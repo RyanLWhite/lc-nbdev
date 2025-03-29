@@ -1,2 +1,3 @@
 def length_of_longest_substring(s: str) -> int:
-    return 0
+    len_longest_ss = len(s)
+    return len_longest_ss
