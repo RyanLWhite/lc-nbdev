@@ -4,5 +4,5 @@ d = { 'settings': { 'branch': 'master',
                 'doc_baseurl': '/lc-nbdev',
                 'doc_host': 'https://RyanLWhite.github.io',
                 'git_url': 'https://github.com/RyanLWhite/lc-nbdev',
-                'lib_path': 'lc'},
-  'syms': {'lc.core': {'lc.core.foo': ('core.html#foo', 'lc/core.py')}}}
+                'lib_path': 'lc_nbdev'},
+  'syms': {'lc_nbdev.core': {'lc_nbdev.core.foo': ('core.html#foo', 'lc_nbdev/core.py')}}}
