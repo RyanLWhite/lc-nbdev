@@ -2,3 +2,5 @@ jupyterlab==4.3.6
 pytest==8.3.5
 black==25.1.0
 pylint==3.3.6
+nbdev==2.3.37
+Jupyterlab-quarto==0.3.5
