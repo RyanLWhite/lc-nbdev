@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "lc-nbdev"
+  site-url: "https://RyanLWhite.github.io/lc-nbdev"
+  description: "a repo for practicing leetcode, TDD, and nbdev"
+  repo-branch: master
+  repo-url: "https://github.com/RyanLWhite/lc-nbdev"
