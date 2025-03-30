@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "lc-nbdev",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "lc-nbdev"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "lc-nbdev",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall lc_nbdev in Development mode\n# make sure lc_nbdev package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to lc_nbdev\n$ nbdev_prepare",
+    "crumbs": [
+      "lc-nbdev"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "lc-nbdev",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/RyanLWhite/lc_nbdev.git\nor from pypi\n$ pip install lc-nbdev\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on pypi.",
+    "crumbs": [
+      "lc-nbdev"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "lc-nbdev",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "lc-nbdev"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "problem_003_longest_substring_without_repeating_characters.html",
+    "href": "problem_003_longest_substring_without_repeating_characters.html",
+    "title": "lc-nbdev",
+    "section": "",
+    "text": "Input: s = \"abcabcbb\"\nOutput: 3\nExplanation: The answer is \"abc\", with the length of 3.\n\n\n\ns = \"pwwkew\"\ns = \"awsawsaw\"\ns = \"ab cd bcd\"\ns = \"abcd def\"\n\n\n\n\na\nw\ns\na\n[\"['a', 'w', 's']\", \"['a', 'w', 's']\", ['a', 'w']]\nw\ns\na\n[\"['a', 'w', 's']\", \"['a', 'w', 's']\", ['a', 'w']]\nw\n\n\n[3, 3, 2]\n\n\n\nclass Solution:\n    def lengthOfLongestSubstring(self, s: str) -&gt; int:\n        substring_lengths = [0] # there is always length zero string\n\n        \n        candidate_substring = []\n        for el in s:\n            if candidate_substring.count(el) &gt; 0:\n                substring_lengths.append(len(candidate_substring))\n                \n                # remove previous instance of el from substring\n                candidate_substring = candidate_substring[candidate_substring.index(el)+1:]\n                \n            candidate_substring.append(el)\n\n        substring_lengths.append(len(candidate_substring))\n        \n        return max(substring_lengths)\n\n\nsolver = Solution()\n\nsolver.lengthOfLongestSubstring(\"aaa\")\n\n1\n\n\n\nsolver.lengthOfLongestSubstring(\"\")\n\n0\n\n\n\nsolver.lengthOfLongestSubstring(\"aab\")\n\n2\n\n\n\nsolver.lengthOfLongestSubstring(\"aba\")\n\n2\n\n\n\nsolver.lengthOfLongestSubstring(\"abcde \")\n\n6\n\n\n\nsolver.lengthOfLongestSubstring(\"abcdeaa \")\n\n5\n\n\n\nsolver.lengthOfLongestSubstring(\"abcdecfgh \")\n\n7",
+    "crumbs": [
+      "problem_003_longest_substring_without_repeating_characters.html"
+    ]
+  }
+]
